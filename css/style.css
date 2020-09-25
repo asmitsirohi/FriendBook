@@ -1,0 +1,19 @@
+#icons {
+    font-size: 28px;
+}
+
+.commentList {
+    height: auto;
+    max-height: 260px;
+    overflow: auto;
+}
+
+#chatbox {
+    height : 390px;
+}
+
+#chatmessages {
+    max-height: 370px;
+    overflow: auto;
+}
+

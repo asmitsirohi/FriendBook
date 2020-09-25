@@ -1,0 +1,52 @@
+.user-menu {
+    top: 48px;
+    border-top: none;
+}
+
+.user-menu .logout {
+    font-size: 14px;
+}
+
+.user-area .nameText {
+    color: #999999;
+    font-size: 18px;
+}
+
+.user-area .nameText:hover {
+    color: white;
+}
+
+.menu-title {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
+    line-height: 50px;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.dashboard {
+    height: auto;
+    max-height: 580px;
+    overflow: auto;
+    background-color: #e9e8e8;
+}
+
+#arrow {
+    cursor: pointer;
+}
+
+#arrow:hover {
+    text-decoration: underline;
+}
+
+#statusRadio {
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+#scroll {
+    height: 400px;
+    max-height: 100%;
+    overflow: auto;
+}

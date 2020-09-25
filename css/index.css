@@ -1,0 +1,28 @@
+#create {
+    width:40%; 
+    font-weight:bolder;
+    font-size: 20px;
+}
+
+#gen {
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+#plus {
+    font-size: 71px;
+    cursor : pointer;
+}
+
+#user {
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+#login {
+    font-weight: bolder;
+}
+
+#forget:hover {
+    text-decoration: underline;
+}
