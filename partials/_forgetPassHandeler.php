@@ -20,11 +20,11 @@
         $mail->port = 587;
         $mail->SMTPSecure = "tls";
         $mail->SMTPAuth = true;
-        $mail->Username = "friendbookhelp@gmail.com";
-        $mail->Password = "9761Abc@25";
-        $mail->setFrom("friendbookhelp@gmail.com");
+        $mail->Username = "*************";
+        $mail->Password = "*************";
+        $mail->setFrom("***************");
         $mail->addAddress($forgetEmail);
-        $mail->addBCC('asmitsirohi9761@gmail.com');
+        $mail->addBCC('************');
         $mail->isHTML(true);
         $mail->Subject = "OTP for FriendBook forget password verification";
         $mail->Body = "<h1>OTP: ".$rndno."</h1><br><b>Hi $forgetEmail,</b> This OTP is sent by FriendBook for forget password verification.<br><br>Do not share your OTP with anyone.";

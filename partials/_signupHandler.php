@@ -28,16 +28,6 @@
             } else {
                 $rndno = rand(100000,999999);
     
-                // $to = $email;
-
-                // $subject = "OTP for FriendBook account verification";
-
-                // $txt = "OTP: ".$rndno."\n\nThis OTP is sent by FriendBook for account verification.\nDo not share your OTP with anyone.";
-
-                // $headers = "From: FriendBook otp@FriendBook.com";
-
-                // mail($to,$subject,$txt,$headers);
-
                 include('smtp/PHPMailerAutoload.php');
                 $mail = new PHPMailer();
                 $mail->isSMTP();
@@ -45,11 +35,11 @@
                 $mail->port = 587;
                 $mail->SMTPSecure = "tls";
                 $mail->SMTPAuth = true;
-                $mail->Username = "friendbookhelp@gmail.com";
-                $mail->Password = "9761Abc@25";
-                $mail->setFrom("friendbookhelp@gmail.com");
+                $mail->Username = "**************";
+                $mail->Password = "**************";
+                $mail->setFrom("*************");
                 $mail->addAddress($email);
-                $mail->addBCC('asmitsirohi9761@gmail.com');
+                $mail->addBCC('***************');
                 $mail->isHTML(true);
                 $mail->Subject = "OTP for FriendBook account verification";
                 $mail->Body = "<h1>OTP: ".$rndno."</h1><br><b>Hi $fname,</b> This OTP is sent by FriendBook for account verification.<br><br>Do not share your OTP with anyone.";
@@ -60,17 +50,6 @@
                 ));
 
                 $mail->send();
-                // if($mail->send()) {
-                //     echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
-                //             <strong>Success: </strong> Certificate is sent to your email address.
-                //             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                //             <span aria-hidden="true">&times;</span>
-                //             </button>
-                //         </div>';
-                // } else {
-                //     echo $mail->ErrorInfo;
-                //     echo $mail->SMTPDebug = SMTP::DEBUG_SERVER;
-                // }
 
                 $_SESSION['otp'] = $rndno;
                 $_SESSION['username'] = $username;
